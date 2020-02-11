@@ -143,6 +143,12 @@ Plugin 'uiiaoo/java-syntax.vim'
 " Plugin 'christoomey/vim-tmux-navigator'
 " Plugin 'sheerun/vim-polyglot'
 
+" Read java class file
+Plugin 'udalov/javap-vim'
+
+" Plugin for Golang
+Plugin 'fatih/vim-go'
+
 call vundle#end()
 filetype plugin indent on
 
