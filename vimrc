@@ -403,6 +403,7 @@ nnoremap <silent> <Leader>c :call QuickFix_toggle()<CR>
 vnoremap <Leader>tc c<C-r>=system('tcc', getreg('"'))[:-2]<CR>
 
 " Copy to clipboard
+" sudo apt-get install vim-gtk in Ubuntu
 vnoremap <C-c> "*y :let @+=@*<CR>
 map <C-v> "+P
 
@@ -726,7 +727,7 @@ xmap <Leader>A :tab split<CR>:Ack ""<Left><CR>
 " retab to 2
 " :set ts=2 sts=2 noet
 " :retab!
-"
+" :set ts=2 noet | retab! | set et ts=4 | retab
 " retab to 4
 " :set ts=4 sts=4 et
 " :retab

@@ -186,3 +186,7 @@ SAVEHIST=5000               #Number of history entries to save to disk
 setopt    appendhistory     #Append history to the history file (no overwriting)
 setopt    sharehistory      #Share history across terminals
 setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/xuerong/.sdkman"
+[[ -s "/Users/xuerong/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/xuerong/.sdkman/bin/sdkman-init.sh"
